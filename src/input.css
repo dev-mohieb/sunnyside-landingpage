@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.hide-to-side {
+    right: -88%;
+    
+}
+.show {
+    left: 0;
+    right: 0;
+    margin: auto;
+    transition: right .3s ease;
+}
+.triangle {
+    width: 28px;
+    height: 28px;
+    background: linear-gradient(to bottom right, transparent 0%, transparent 50%, white 50%, white 100%);
+}
