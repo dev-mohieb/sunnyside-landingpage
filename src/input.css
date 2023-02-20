@@ -2,18 +2,28 @@
 @tailwind components;
 @tailwind utilities;
 
-.hide-to-side {
-    right: -88%;
-    
+.hide {
+    visibility: hidden;
+    opacity: 0;
 }
 .show {
+    visibility: visible;
+    opacity: 100;
     left: 0;
     right: 0;
     margin: auto;
-    transition: right .3s ease;
+    transition: opacity .3s ease;
 }
-.triangle {
-    width: 28px;
-    height: 28px;
-    background: linear-gradient(to bottom right, transparent 0%, transparent 50%, white 50%, white 100%);
+
+@layer components {
+    .figure {
+        @apply bg-center bg-no-repeat aspect-square bg-cover
+    }
+    .text-section {
+        @apply aspect-square text-center flex flex-col gap-8 py-16 px-6 text-desatBlueFEM 
+    }
+    .figure-text {
+        @apply flex flex-col justify-end bg-center bg-no-repeat aspect-[3/5] bg-cover md:aspect-square
+    }
+
 }

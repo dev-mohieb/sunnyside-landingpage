@@ -25,8 +25,8 @@ module.exports = {
         'orangeMobile': 'url(../images/mobile/image-gallery-orange.jpg)',
         'sugarMobile': 'url(../images/mobile/image-gallery-sugar-cubes.jpg)',
         'designMobile': 'url(../images/mobile/image-graphic-design.jpg)',
-        'photographyMobile': 'url(../mobile/images/image-photography.jpg)',
-        'standoutMobile': 'url(../mobile/images/image-stand-out.jpg)',
+        'photographyMobile': 'url(../images/mobile/image-photography.jpg)',
+        'standoutMobile': 'url(../images/mobile/image-stand-out.jpg)',
         'eggMobile': 'url(../images/mobile/image-transform.jpg)',
         
         'heroDesktop': 'url(../images/desktop/image-header.jpg)',
@@ -35,8 +35,8 @@ module.exports = {
         'orangeDesktop': 'url(../images/desktop/image-gallery-orange.jpg)',
         'sugarDesktop': 'url(../images/desktop/image-gallery-sugar-cubes.jpg)',
         'designDesktop': 'url(../images/desktop/image-graphic-design.jpg)',
-        'photographyDesktop': 'url(../desktop/images/image-photography.jpg)',
-        'standoutDesktop': 'url(../desktop/images/image-stand-out.jpg)',
+        'photographyDesktop': 'url(../images/desktop/image-photography.jpg)',
+        'standoutDesktop': 'url(../images/desktop/image-stand-out.jpg)',
         'eggDesktop': 'url(../images/desktop/image-transform.jpg)',
       }
     },

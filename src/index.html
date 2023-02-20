@@ -24,7 +24,7 @@
   </head>
   <body class="text-[18px]">
     <!-- Navigation Bar -->
-    <nav class="flex items-center justify-between px-6 py-8 fixed w-full">
+    <nav class="flex items-center justify-between px-6 py-8 fixed w-full md:px-4">
       <img class="h-6 w-auto" src="../images/logo.svg" alt="logo" />
       <!-- Nav Menu Btn - Mobile Only -->
       <button id="burger" class="cursor-default md:hidden">
@@ -33,60 +33,181 @@
       <!-- Nav Menu -->
       <section
         id="nav-menu"
-        class="
-        hide-to-side
-        transition-all text-xl flex absolute w-[88%] top-28 m-auto 
-        bg-white flex-col py-10 gap-8 items-center text-darkGrayBlueFEM
-        md:text-white
-        md:p-0 md:bg-inherit md:justify-center
-        md:flex-row md:m-0
-        md:static md:w-auto md:no-hide md:transition-none font-barlow"
+        class="hide text-xl flex absolute w-[88%] top-28 m-auto bg-white flex-col py-10 gap-8 items-center text-darkGrayBlueFEM font-barlow
+         md:text-white md:p-0 md:bg-inherit md:justify-center md:flex-row md:m-0 md:static md:w-auto md:no-hide md:transition-none md:visible md:opacity-100 md:gap-9
+        "
         role="navigation"
       >
-        <a class="cursor-default" href="#about">About</a>
-        <a class="cursor-default" href="#services">Services</a>
-        <a class="cursor-default" href="#projects">Projects</a>
+        <a class="cursor-default md:text-sm md:cursor-pointer" href="#about">About</a>
+        <a class="cursor-default md:text-sm md:cursor-pointer" href="#services">Services</a>
+        <a class="cursor-default md:text-sm md:cursor-pointer" href="#projects">Projects</a>
         <a
-          class="cursor-default font-fraunces text-desatBlueFEM bg-yellowFEM py-4 px-8 rounded-full text-lg
-          md:bg-white"
+          class="cursor-default font-fraunces text-desatBlueFEM bg-yellowFEM py-4 px-8 rounded-full text-lg md:bg-white md:hover:bg-white/50 md:hover:text-white md:cursor-pointer md:text-sm
+          md:py-3 md:px-6"
           href="#contact"
           >CONTACT</a
         >
       </section>
     </nav>
     <header
-      class="
-      h-screen bg-center bg-cover bg-heroMobile
-      flex flex-col justify-center items-center text-center
-      gap-12
-      md:bg-heroDesktop"
+      class="h-screen bg-center bg-cover bg-heroMobile flex flex-col justify-center items-center text-center gap-12 md:bg-heroDesktop"
     >
-      <h2 class="font-fraunces font-black uppercase text-white text-4xl tracking-[.5rem]">We are creatives</h2>
-      <img src="../images/icon-arrow-down.svg" alt="">
+      <h2
+        class="font-fraunces font-black uppercase text-white text-4xl tracking-[.5rem]"
+      >
+        We are creatives
+      </h2>
+      <img src="../images/icon-arrow-down.svg" alt="" />
     </header>
-    <main
-    class="grid grid-cols-1
-    md:grid-cols-2 place-items-stretch">
-    <div class="bg-eggMobile bg-center bg-no-repeat w-[1fr] bg-cover
-    md:bg-eggDesktop ">
-    </div>
-
+    <main class="grid grid-cols-1 md:grid-cols-2">
+      <!-- First Section -->
+      <figure
+        class="figure bg-eggMobile md:bg-eggDesktop order-1 md:order-2"
+      ></figure>
+      <section
+        class="text-section items-center justify-center order-2 md:order-1"
+      >
+        <h2 class="font-fraunces font-black text-4xl">Transform your brand</h2>
+        <p class="text-darkGrayBlueFEM font-barlow text-lg">
+          We are a full-service creative agency specializing in helping brands
+          grow fast. Engage your clients through compelling visuals that do most
+          of the marketing for you.
+        </p>
+        <div class="flex flex-col font-fraunces font-black">
+          <span
+            class="-mb-[25px] bg-yellowFEM/40 rounded-full w-36 h-2"
+          >
+        </span>
+          <a href="#"> LEARN MORE </a>
+        </div>
+      </section>
+      <!-- Second section -->
+      <figure
+        class="figure bg-standoutMobile md:bg-standoutDesktop order-3 md:order-4"
+      ></figure>
+      <section
+        class="text-section items-center justify-center order-4"
+      >
+        <h2 class="font-fraunces font-black text-4xl">Stand out to the right audience</h2>
+        <p class="text-darkGrayBlueFEM font-barlow text-lg">
+          Using a collaborative formula of
+          designers, researchers, photographers, videographers, and copywriters, we’ll
+          build and extend your brand in digital places.
+        </p>
+        <div class="flex flex-col font-fraunces font-black">
+          <span
+            class="-mb-[25px] bg-softRedFEM/40 rounded-full w-36 h-2
+            md:hover:bg-softRedFEM/100"
+          >
+        </span>
+          <a href="#"> LEARN MORE </a>
+        </div>
+      </section>
+      <!-- Third Section -->
+      <figure
+        class="figure-text bg-designMobile md:bg-designDesktop order-5 md:order-6"
+      >
+        <section
+          class="text-section items-center justify-end"
+        >
+          <h2 class="font-fraunces font-black text-graphicDesignTextFEM text-3xl">Graphic design</h2>
+          <p class="text-graphicDesignTextFEM font-barlow text-lg">
+            Great design makes you memorable. We deliver artwork that underscores your
+            potential clients’ attention.
+          </p>
+          </section>
+        </figure>
+      <!-- Fourth Section -->
+      <figure
+        class="figure-text bg-photographyMobile md:bg-photographyDesktop order-6 md:order-7"
+      >
+      <section
+        class="text-section items-center justify-end"
+      >
+        <h2 class="font-fraunces font-black text-photographyTextFEM text-3xl">Photography</h2>
+        <p class="text-photographyTextFEM font-barlow text-lg">
+          Increase your credibility by getting the most stunning, high-quality photos
+          that improve your business image.
+        </p>
+      </section>
+    </figure>
     </main>
-      We are a full-service creative agency
-    specializing in helping brands grow fast. Engage your clients through
-    compelling visuals that do most of the marketing for you. Learn more Stand
-    out to the right audience Using a collaborative formula of designers,
-    researchers, photographers, videographers, and copywriters, we’ll build and
-    extend your brand in digital places. Learn more Graphic design Great design
-    makes you memorable. We deliver artwork that underscores your brand message
-    and captures potential clients’ attention. Photography Increase your
-    credibility by getting the most stunning, high-quality photos that improve
-    your business image. Client testimonials We put our trust in Sunnyside and
-    they delivered, making sure our needs were met and deadlines were always
-    hit. Emily R. Marketing Director Sunnyside’s enthusiasm coupled with their
-    keen interest in our brand’s success made it a satisfying and enjoyable
-    experience. Thomas S. Chief Operating Officer Incredible end result! Our
-    sales increased over 400% when we worked with Sunnyside. Highly recommended!
-    Jennie F. Business Owner About Services Projects Contact
+    <!-- Client Reviews -->
+    <aside class="text-center space-y-16 py-16 px-6 bg-grayBlueFEM/5">
+      <h3 class="font-fraunces uppercase tracking-[.2em] text-grayBlueFEM">Client testimonials</h3>
+      <section class="flex flex-col md:flex-row justify-center items-center gap-16">
+        <!-- First Client -->
+        <article class="flex flex-col justify-between items-center gap-8">
+          <img
+          class="w-20 rounded-full "
+           src="../images/image-emily.jpg" alt="Emily posing for a photograph infront of a cropped section of a mountain">
+          <p class="font-barlow text-darkerGrayBlueFEM">We put our trust in
+            Sunnyside and they delivered, making sure our needs were met and deadlines
+            were always hit.</p>
+          <article class="space-y-2">
+            <h4 class="
+            font-fraunces font-black text-lg">Emily R.</h4>
+            <p class="font-barlow text-sm text-grayBlueFEM">Marketing Director</p>
+          </article>
+        </article>
+        <!-- Second Client -->
+        <article class="flex flex-col justify-between items-center gap-8">
+          <img
+          class="w-20 rounded-full "
+           src="../images/image-thomas.jpg" alt="Thomas smiling at the camera in a dim room">
+          <p class="font-barlow text-darkerGrayBlueFEM">
+            Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and
+            enjoyable experience.
+          </p>
+          <article class="space-y-2">
+            <h4 class="
+            font-fraunces font-black text-lg">Thomas S.</h4>
+            <p class="font-barlow text-sm text-grayBlueFEM">Chief Operating Officer</p>
+          </article>
+        </article>
+        <!-- Third Client -->
+        <article class="flex flex-col justify-between items-center gap-8">
+          <img
+          class="w-20 rounded-full "
+           src="../images/image-jennie.jpg" alt="Jennie smiling at the camera on the beach">
+          <p class="font-barlow text-darkerGrayBlueFEM">
+            Incredible end
+            result! Our sales increased over 400% when we worked with Sunnyside. Highly
+            recommended!
+          </p>
+          <article class="space-y-2">
+            <h4 class="
+            font-fraunces font-black text-lg">Jennie F.</h4>
+            <p class="font-barlow text-sm text-grayBlueFEM">Business Owner</p>
+          </article>
+        </article>
+      </section>
+    </aside>
+    <div class="grid grid-cols-2 md:grid-cols-4">
+      <img
+       srcset="../images/mobile/image-gallery-milkbottles.jpg 500w, ../images/desktop/image-gallery-milkbottles.jpg 1000w"
+       sizes="(min-width: 768px)" 500px,
+       1000px
+       src="..images/mobile/image-gallery-milkbottles.jpg"
+       alt="">
+      <img
+       srcset=""
+       sizes=""
+       src=""
+       alt="">
+      <img
+       srcset=""
+       sizes=""
+       src=""
+       alt="">
+      <img
+       srcset=""
+       sizes=""
+       src=""
+       alt="">
+    </div>
+     
+       
+          About Services Projects Contact
   </body>
 </html>
