@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en" dir="ltr" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,7 +8,7 @@
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./images/favicon-32x32.png"
+      href="../images/favicon-32x32.png"
     />
     <title>Frontend Mentor | Sunnyside agency landing page | Mohieb</title>
     <!-- Google Fonts -->
@@ -22,9 +22,9 @@
     <link rel="stylesheet" href="../dist/output.css" />
     <script src="./index.js" type="module"></script>
   </head>
-  <body class="text-[18px]">
+  <body class="text-[18px] min-w-[300px]">
     <!-- Navigation Bar -->
-    <nav class="flex items-center justify-between px-6 py-8 fixed w-full md:px-4">
+    <nav class="flex items-center justify-between px-6 py-8 fixed w-full bg-gradient-to-b from-black/30 to-transparent md:px-4">
       <img class="h-6 w-auto" src="../images/logo.svg" alt="logo" />
       <!-- Nav Menu Btn - Mobile Only -->
       <button id="burger" class="cursor-default md:hidden">
@@ -33,8 +33,8 @@
       <!-- Nav Menu -->
       <section
         id="nav-menu"
-        class="hide text-xl flex absolute w-[88%] top-28 m-auto bg-white flex-col py-10 gap-8 items-center text-darkGrayBlueFEM font-barlow
-         md:text-white md:p-0 md:bg-inherit md:justify-center md:flex-row md:m-0 md:static md:w-auto md:no-hide md:transition-none md:visible md:opacity-100 md:gap-9
+        class="hide text-xl flex absolute w-[88%] m-auto bg-white flex-col py-10 gap-8 items-center shadow-md text-darkGrayBlueFEM font-barlow left-0 right-0
+         md:text-white md:p-0 md:bg-inherit md:shadow-none md:justify-center md:flex-row md:m-0 md:static md:w-auto md:no-hide md:transition-none md:visible md:opacity-100 md:gap-9
         "
         role="navigation"
       >
@@ -50,6 +50,7 @@
       </section>
     </nav>
     <header
+      id="about"
       class="h-screen bg-center bg-cover bg-heroMobile flex flex-col justify-center items-center text-center gap-12 md:bg-heroDesktop"
     >
       <h2
@@ -59,7 +60,9 @@
       </h2>
       <img src="../images/icon-arrow-down.svg" alt="" />
     </header>
-    <main class="grid grid-cols-1 md:grid-cols-2">
+    <main 
+    id="services"
+    class="grid grid-cols-1 md:grid-cols-2 justify-items-stretch items-stretch">
       <!-- First Section -->
       <figure
         class="figure bg-eggMobile md:bg-eggDesktop order-1 md:order-2"
@@ -78,7 +81,7 @@
             class="-mb-[25px] bg-yellowFEM/40 rounded-full w-36 h-2"
           >
         </span>
-          <a href="#"> LEARN MORE </a>
+          <a href="#" class="learn-more-yellow cursor-default md:cursor-pointer"> LEARN MORE </a>
         </div>
       </section>
       <!-- Second section -->
@@ -100,7 +103,7 @@
             md:hover:bg-softRedFEM/100"
           >
         </span>
-          <a href="#"> LEARN MORE </a>
+          <a href="#" class="learn-more-red cursor-default md:cursor-pointer"> LEARN MORE </a>
         </div>
       </section>
       <!-- Third Section -->
@@ -133,7 +136,9 @@
     </figure>
     </main>
     <!-- Client Reviews -->
-    <aside class="text-center space-y-16 py-16 px-6 bg-grayBlueFEM/5">
+    <aside 
+    id="projects"
+    class="text-center space-y-16 py-16 px-6 bg-clientSectionFEM">
       <h3 class="font-fraunces uppercase tracking-[.2em] text-grayBlueFEM">Client testimonials</h3>
       <section class="flex flex-col md:flex-row justify-center items-center gap-16">
         <!-- First Client -->
@@ -184,30 +189,76 @@
       </section>
     </aside>
     <div class="grid grid-cols-2 md:grid-cols-4">
-      <img
-       srcset="../images/mobile/image-gallery-milkbottles.jpg 500w, ../images/desktop/image-gallery-milkbottles.jpg 1000w"
-       sizes="(min-width: 768px)" 500px,
-       1000px
-       src="..images/mobile/image-gallery-milkbottles.jpg"
-       alt="">
-      <img
-       srcset=""
-       sizes=""
-       src=""
-       alt="">
-      <img
-       srcset=""
-       sizes=""
-       src=""
-       alt="">
-      <img
-       srcset=""
-       sizes=""
-       src=""
-       alt="">
+      <!-- First Picture -->
+      <picture>
+        <source srcset="../images/desktop/image-gallery-milkbottles.jpg"
+        media="(min-width: 768px)">
+        <img src="../images/mobile/image-gallery-milkbottles.jpg" alt="Milk bottles with a design of a blue sky with some clouds behind them">
+      </picture>
+      <!-- Second Picture -->
+      <picture>
+        <source srcset="../images/desktop/image-gallery-orange.jpg"
+        media="(min-width: 768px)">
+        <img src="../images/mobile/image-gallery-orange.jpg" alt="An orange sliced in half, in a plate on an orange colored surface">
+      </picture>
+      <!-- Third Picture -->
+      <picture>
+        <source srcset="../images/desktop/image-gallery-cone.jpg"
+        media="(min-width: 768px)">
+        <img src="../images/mobile/image-gallery-cone.jpg" alt="Empty ice-cream cone in front of a sky-blue background">
+      </picture>
+      <!-- Fourth Picture -->
+      <picture>
+        <source srcset="../images/desktop/image-gallery-sugarcubes.jpg"
+        media="(min-width: 768px)">
+        <img src="../images/mobile/image-gallery-sugar-cubes.jpg" alt="Sugar cubes stacked on top of each other in front of a pink background on a slightly lighter shade pink surface">
+      </picture>
     </div>
-     
-       
-          About Services Projects Contact
+     <!-- Footer -->
+    <footer 
+    class="
+    flex flex-col items-center justify-center gap-10 py-16 px-6 bg-footerBgFEM">
+      <img 
+      src="../images/logofooter.svg"
+      class="h-8" 
+      alt="Sunnyside Logo">
+      <section 
+      class="flex gap-12 font-barlow text-footerFEM  "
+      role="navigation">
+        <a class="cursor-default md:hover:text-graphicDesignTextFEM md:cursor-pointer"
+         href="#about"
+        >About</a>
+        <a class="cursor-default md:hover:text-graphicDesignTextFEM md:cursor-pointer"
+         href="#services"
+        >Services</a>
+        <a class="cursor-default md:hover:text-graphicDesignTextFEM md:cursor-pointer"
+         href="#projects"
+        >Projects</a>
+      </section>
+      <section 
+      class="flex gap-8 mt-8"
+      role="link">
+        <a 
+        href="#" 
+        target="_blank"
+        class="cursor-default md:cursor-pointer">
+          <img src="../images/icon-facebook.svg" alt=""></a>
+        <a 
+        href="#" 
+        target="_blank"
+        class="cursor-default md:cursor-pointer">
+          <img src="../images/icon-instagram.svg" alt=""></a>
+        <a 
+        href="#" 
+        target="_blank"
+        class="cursor-default md:cursor-pointer">
+          <img src="../images/icon-twitter.svg" alt=""></a>
+        <a 
+        href="#" 
+        target="_blank"
+        class="cursor-default md:cursor-pointer">
+          <img src="../images/icon-pinterest.svg" alt=""></a>
+      </section>
+    </footer>
   </body>
 </html>
