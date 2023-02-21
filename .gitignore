@@ -9,6 +9,7 @@ style-guide.md
 package.json
 package-lock.json
 node_modules
+README-template.md
 
 # Avoid accidental XD upload if you convert the design file
 ###############################################
