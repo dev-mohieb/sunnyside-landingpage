@@ -781,11 +781,11 @@ video {
 }
 
 .bg-designMobile {
-  background-image: url(../images/mobile/image-graphic-design.jpg);
+  background-image: url(/images/mobile/image-graphic-design.jpg);
 }
 
 .bg-eggMobile {
-  background-image: url(../images/mobile/image-transform.jpg);
+  background-image: url(/images/mobile/image-transform.jpg);
 }
 
 .bg-gradient-to-b {
@@ -793,15 +793,15 @@ video {
 }
 
 .bg-heroMobile {
-  background-image: url(../images/mobile/image-header.jpg);
+  background-image: url(/images/mobile/image-header.jpg);
 }
 
 .bg-photographyMobile {
-  background-image: url(../images/mobile/image-photography.jpg);
+  background-image: url(/images/mobile/image-photography.jpg);
 }
 
 .bg-standoutMobile {
-  background-image: url(../images/mobile/image-stand-out.jpg);
+  background-image: url(/images/mobile/image-stand-out.jpg);
 }
 
 .from-black\/30 {
@@ -1047,23 +1047,23 @@ video {
   }
 
   .md\:bg-designDesktop {
-    background-image: url(../images/desktop/image-graphic-design.jpg);
+    background-image: url(/images/desktop/image-graphic-design.jpg);
   }
 
   .md\:bg-eggDesktop {
-    background-image: url(../images/desktop/image-transform.jpg);
+    background-image: url(/images/desktop/image-transform.jpg);
   }
 
   .md\:bg-heroDesktop {
-    background-image: url(../images/desktop/image-header.jpg);
+    background-image: url(/images/desktop/image-header.jpg);
   }
 
   .md\:bg-photographyDesktop {
-    background-image: url(../images/desktop/image-photography.jpg);
+    background-image: url(/images/desktop/image-photography.jpg);
   }
 
   .md\:bg-standoutDesktop {
-    background-image: url(../images/desktop/image-stand-out.jpg);
+    background-image: url(/images/desktop/image-stand-out.jpg);
   }
 
   .md\:p-0 {

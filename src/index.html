@@ -3,13 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta property="og:image" content="../images/website-thumbnail.png">
+    <meta property="og:image" content="/images/website-thumbnail.png" />
     <!-- Title and Icon -->
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="../images/favicon-32x32.png"
+      href="/images/favicon-32x32.png"
     />
     <title>Frontend Mentor | Sunnyside agency landing page | Mohieb</title>
     <!-- Google Fonts -->
@@ -20,31 +20,36 @@
       rel="stylesheet"
     />
     <!-- Styles and JS -->
-    <link rel="stylesheet" href="../dist/output.css" />
+    <link rel="stylesheet" href="/dist/output.css" />
     <script src="./index.js" type="module"></script>
   </head>
   <body class="text-[18px] min-w-[300px]">
     <!-- Navigation Bar -->
-    <nav class="flex items-center justify-between px-6 py-8 fixed w-full bg-gradient-to-b from-black/30 to-transparent md:px-4">
-      <img class="h-6 w-auto" src="../images/logo.svg" alt="logo" />
+    <nav
+      class="flex items-center justify-between px-6 py-8 fixed w-full bg-gradient-to-b from-black/30 to-transparent md:px-4"
+    >
+      <img class="h-6 w-auto" src="/images/logo.svg" alt="logo" />
       <!-- Nav Menu Btn - Mobile Only -->
       <button id="burger" class="cursor-default md:hidden">
-        <img src="../images/icon-hamburger.svg" alt="" />
+        <img src="/images/icon-hamburger.svg" alt="" />
       </button>
       <!-- Nav Menu -->
       <section
         id="nav-menu"
-        class="hide text-xl flex absolute w-[88%] m-auto bg-white flex-col py-10 gap-8 items-center shadow-md text-darkGrayBlueFEM font-barlow left-0 right-0
-         md:text-white md:p-0 md:bg-inherit md:shadow-none md:justify-center md:flex-row md:m-0 md:static md:w-auto md:no-hide md:transition-none md:visible md:opacity-100 md:gap-9
-        "
+        class="hide text-xl flex absolute w-[88%] m-auto bg-white flex-col py-10 gap-8 items-center shadow-md text-darkGrayBlueFEM font-barlow left-0 right-0 md:text-white md:p-0 md:bg-inherit md:shadow-none md:justify-center md:flex-row md:m-0 md:static md:w-auto md:no-hide md:transition-none md:visible md:opacity-100 md:gap-9"
         role="navigation"
       >
-        <a class="cursor-default md:text-sm md:cursor-pointer" href="#about">About</a>
-        <a class="cursor-default md:text-sm md:cursor-pointer" href="#services">Services</a>
-        <a class="cursor-default md:text-sm md:cursor-pointer" href="#projects">Projects</a>
+        <a class="cursor-default md:text-sm md:cursor-pointer" href="#about"
+          >About</a
+        >
+        <a class="cursor-default md:text-sm md:cursor-pointer" href="#services"
+          >Services</a
+        >
+        <a class="cursor-default md:text-sm md:cursor-pointer" href="#projects"
+          >Projects</a
+        >
         <a
-          class="cursor-default font-fraunces text-desatBlueFEM bg-yellowFEM py-4 px-8 rounded-full text-lg md:bg-white md:hover:bg-white/50 md:hover:text-white md:cursor-pointer md:text-sm
-          md:py-3 md:px-6"
+          class="cursor-default font-fraunces text-desatBlueFEM bg-yellowFEM py-4 px-8 rounded-full text-lg md:bg-white md:hover:bg-white/50 md:hover:text-white md:cursor-pointer md:text-sm md:py-3 md:px-6"
           href="#contact"
           >CONTACT</a
         >
@@ -59,11 +64,12 @@
       >
         We are creatives
       </h2>
-      <img src="../images/icon-arrow-down.svg" alt="" />
+      <img src="/images/icon-arrow-down.svg" alt="" />
     </header>
-    <main 
-    id="services"
-    class="grid grid-cols-1 md:grid-cols-2 justify-items-stretch items-stretch">
+    <main
+      id="services"
+      class="grid grid-cols-1 md:grid-cols-2 justify-items-stretch items-stretch"
+    >
       <!-- First Section -->
       <figure
         class="figure bg-eggMobile md:bg-eggDesktop order-1 md:order-2"
@@ -78,112 +84,130 @@
           of the marketing for you.
         </p>
         <div class="flex flex-col font-fraunces font-black">
-          <span
-            class="-mb-[25px] bg-yellowFEM/40 rounded-full w-36 h-2"
+          <span class="-mb-[25px] bg-yellowFEM/40 rounded-full w-36 h-2">
+          </span>
+          <a
+            href="#"
+            class="learn-more-yellow cursor-default md:cursor-pointer"
           >
-        </span>
-          <a href="#" class="learn-more-yellow cursor-default md:cursor-pointer"> LEARN MORE </a>
+            LEARN MORE
+          </a>
         </div>
       </section>
       <!-- Second section -->
       <figure
         class="figure bg-standoutMobile md:bg-standoutDesktop order-3 md:order-4"
       ></figure>
-      <section
-        class="text-section items-center justify-center order-4"
-      >
-        <h2 class="font-fraunces font-black text-4xl">Stand out to the right audience</h2>
+      <section class="text-section items-center justify-center order-4">
+        <h2 class="font-fraunces font-black text-4xl">
+          Stand out to the right audience
+        </h2>
         <p class="text-darkGrayBlueFEM font-barlow text-lg">
-          Using a collaborative formula of
-          designers, researchers, photographers, videographers, and copywriters, we’ll
-          build and extend your brand in digital places.
+          Using a collaborative formula of designers, researchers,
+          photographers, videographers, and copywriters, we’ll build and extend
+          your brand in digital places.
         </p>
         <div class="flex flex-col font-fraunces font-black">
           <span
-            class="-mb-[25px] bg-softRedFEM/40 rounded-full w-36 h-2
-            md:hover:bg-softRedFEM/100"
+            class="-mb-[25px] bg-softRedFEM/40 rounded-full w-36 h-2 md:hover:bg-softRedFEM/100"
           >
-        </span>
-          <a href="#" class="learn-more-red cursor-default md:cursor-pointer"> LEARN MORE </a>
+          </span>
+          <a href="#" class="learn-more-red cursor-default md:cursor-pointer">
+            LEARN MORE
+          </a>
         </div>
       </section>
       <!-- Third Section -->
       <figure
         class="figure-text bg-designMobile md:bg-designDesktop order-5 md:order-6"
       >
-        <section
-          class="text-section items-center justify-end"
-        >
-          <h2 class="font-fraunces font-black text-graphicDesignTextFEM text-3xl">Graphic design</h2>
+        <section class="text-section items-center justify-end">
+          <h2
+            class="font-fraunces font-black text-graphicDesignTextFEM text-3xl"
+          >
+            Graphic design
+          </h2>
           <p class="text-graphicDesignTextFEM font-barlow text-lg">
-            Great design makes you memorable. We deliver artwork that underscores your
-            potential clients’ attention.
+            Great design makes you memorable. We deliver artwork that
+            underscores your potential clients’ attention.
           </p>
-          </section>
-        </figure>
+        </section>
+      </figure>
       <!-- Fourth Section -->
       <figure
         class="figure-text bg-photographyMobile md:bg-photographyDesktop order-6 md:order-7"
       >
-      <section
-        class="text-section items-center justify-end"
-      >
-        <h2 class="font-fraunces font-black text-photographyTextFEM text-3xl">Photography</h2>
-        <p class="text-photographyTextFEM font-barlow text-lg">
-          Increase your credibility by getting the most stunning, high-quality photos
-          that improve your business image.
-        </p>
-      </section>
-    </figure>
+        <section class="text-section items-center justify-end">
+          <h2 class="font-fraunces font-black text-photographyTextFEM text-3xl">
+            Photography
+          </h2>
+          <p class="text-photographyTextFEM font-barlow text-lg">
+            Increase your credibility by getting the most stunning, high-quality
+            photos that improve your business image.
+          </p>
+        </section>
+      </figure>
     </main>
     <!-- Client Reviews -->
-    <aside 
-    id="projects"
-    class="text-center space-y-16 py-16 px-6 bg-clientSectionFEM">
-      <h3 class="font-fraunces uppercase tracking-[.2em] text-grayBlueFEM">Client testimonials</h3>
-      <section class="flex flex-col md:flex-row justify-center items-center gap-16">
+    <aside
+      id="projects"
+      class="text-center space-y-16 py-16 px-6 bg-clientSectionFEM"
+    >
+      <h3 class="font-fraunces uppercase tracking-[.2em] text-grayBlueFEM">
+        Client testimonials
+      </h3>
+      <section
+        class="flex flex-col md:flex-row justify-center items-center gap-16"
+      >
         <!-- First Client -->
         <article class="flex flex-col justify-between items-center gap-8">
           <img
-          class="w-20 rounded-full "
-           src="../images/image-emily.jpg" alt="Emily posing for a photograph infront of a cropped section of a mountain">
-          <p class="font-barlow text-darkerGrayBlueFEM">We put our trust in
-            Sunnyside and they delivered, making sure our needs were met and deadlines
-            were always hit.</p>
+            class="w-20 rounded-full"
+            src="/images/image-emily.jpg"
+            alt="Emily posing for a photograph infront of a cropped section of a mountain"
+          />
+          <p class="font-barlow text-darkerGrayBlueFEM">
+            We put our trust in Sunnyside and they delivered, making sure our
+            needs were met and deadlines were always hit.
+          </p>
           <article class="space-y-2">
-            <h4 class="
-            font-fraunces font-black text-lg">Emily R.</h4>
-            <p class="font-barlow text-sm text-grayBlueFEM">Marketing Director</p>
+            <h4 class="font-fraunces font-black text-lg">Emily R.</h4>
+            <p class="font-barlow text-sm text-grayBlueFEM">
+              Marketing Director
+            </p>
           </article>
         </article>
         <!-- Second Client -->
         <article class="flex flex-col justify-between items-center gap-8">
           <img
-          class="w-20 rounded-full "
-           src="../images/image-thomas.jpg" alt="Thomas smiling at the camera in a dim room">
+            class="w-20 rounded-full"
+            src="/images/image-thomas.jpg"
+            alt="Thomas smiling at the camera in a dim room"
+          />
           <p class="font-barlow text-darkerGrayBlueFEM">
-            Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and
-            enjoyable experience.
+            Sunnyside’s enthusiasm coupled with their keen interest in our
+            brand’s success made it a satisfying and enjoyable experience.
           </p>
           <article class="space-y-2">
-            <h4 class="
-            font-fraunces font-black text-lg">Thomas S.</h4>
-            <p class="font-barlow text-sm text-grayBlueFEM">Chief Operating Officer</p>
+            <h4 class="font-fraunces font-black text-lg">Thomas S.</h4>
+            <p class="font-barlow text-sm text-grayBlueFEM">
+              Chief Operating Officer
+            </p>
           </article>
         </article>
         <!-- Third Client -->
         <article class="flex flex-col justify-between items-center gap-8">
           <img
-          class="w-20 rounded-full "
-           src="../images/image-jennie.jpg" alt="Jennie smiling at the camera on the beach">
+            class="w-20 rounded-full"
+            src="/images/image-jennie.jpg"
+            alt="Jennie smiling at the camera on the beach"
+          />
           <p class="font-barlow text-darkerGrayBlueFEM">
-            Incredible end
-            result! Our sales increased over 400% when we worked with Sunnyside. Highly
-            recommended!
+            Incredible end result! Our sales increased over 400% when we worked
+            with Sunnyside. Highly recommended!
           </p>
           <article class="space-y-2">
-            <h4 class="
-            font-fraunces font-black text-lg">Jennie F.</h4>
+            <h4 class="font-fraunces font-black text-lg">Jennie F.</h4>
             <p class="font-barlow text-sm text-grayBlueFEM">Business Owner</p>
           </article>
         </article>
@@ -192,73 +216,84 @@
     <div class="grid grid-cols-2 md:grid-cols-4">
       <!-- First Picture -->
       <picture>
-        <source srcset="../images/desktop/image-gallery-milkbottles.jpg"
-        media="(min-width: 768px)">
-        <img src="../images/mobile/image-gallery-milkbottles.jpg" alt="Milk bottles with a design of a blue sky with some clouds behind them">
+        <source
+          srcset="/images/desktop/image-gallery-milkbottles.jpg"
+          media="(min-width: 768px)"
+        />
+        <img
+          src="/images/mobile/image-gallery-milkbottles.jpg"
+          alt="Milk bottles with a design of a blue sky with some clouds behind them"
+        />
       </picture>
       <!-- Second Picture -->
       <picture>
-        <source srcset="../images/desktop/image-gallery-orange.jpg"
-        media="(min-width: 768px)">
-        <img src="../images/mobile/image-gallery-orange.jpg" alt="An orange sliced in half, in a plate on an orange colored surface">
+        <source
+          srcset="/images/desktop/image-gallery-orange.jpg"
+          media="(min-width: 768px)"
+        />
+        <img
+          src="/images/mobile/image-gallery-orange.jpg"
+          alt="An orange sliced in half, in a plate on an orange colored surface"
+        />
       </picture>
       <!-- Third Picture -->
       <picture>
-        <source srcset="../images/desktop/image-gallery-cone.jpg"
-        media="(min-width: 768px)">
-        <img src="../images/mobile/image-gallery-cone.jpg" alt="Empty ice-cream cone in front of a sky-blue background">
+        <source
+          srcset="/images/desktop/image-gallery-cone.jpg"
+          media="(min-width: 768px)"
+        />
+        <img
+          src="/images/mobile/image-gallery-cone.jpg"
+          alt="Empty ice-cream cone in front of a sky-blue background"
+        />
       </picture>
       <!-- Fourth Picture -->
       <picture>
-        <source srcset="../images/desktop/image-gallery-sugarcubes.jpg"
-        media="(min-width: 768px)">
-        <img src="../images/mobile/image-gallery-sugar-cubes.jpg" alt="Sugar cubes stacked on top of each other in front of a pink background on a slightly lighter shade pink surface">
+        <source
+          srcset="/images/desktop/image-gallery-sugarcubes.jpg"
+          media="(min-width: 768px)"
+        />
+        <img
+          src="/images/mobile/image-gallery-sugar-cubes.jpg"
+          alt="Sugar cubes stacked on top of each other in front of a pink background on a slightly lighter shade pink surface"
+        />
       </picture>
     </div>
-     <!-- Footer -->
-    <footer 
-    class="
-    flex flex-col items-center justify-center gap-10 py-16 px-6 bg-footerBgFEM">
-      <img 
-      src="../images/logofooter.svg"
-      class="h-8" 
-      alt="Sunnyside Logo">
-      <section 
-      class="flex gap-12 font-barlow text-footerFEM  "
-      role="navigation">
-        <a class="cursor-default md:hover:text-graphicDesignTextFEM md:cursor-pointer"
-         href="#about"
-        >About</a>
-        <a class="cursor-default md:hover:text-graphicDesignTextFEM md:cursor-pointer"
-         href="#services"
-        >Services</a>
-        <a class="cursor-default md:hover:text-graphicDesignTextFEM md:cursor-pointer"
-         href="#projects"
-        >Projects</a>
+    <!-- Footer -->
+    <footer
+      class="flex flex-col items-center justify-center gap-10 py-16 px-6 bg-footerBgFEM"
+    >
+      <img src="/images/logofooter.svg" class="h-8" alt="Sunnyside Logo" />
+      <section class="flex gap-12 font-barlow text-footerFEM" role="navigation">
+        <a
+          class="cursor-default md:hover:text-graphicDesignTextFEM md:cursor-pointer"
+          href="#about"
+          >About</a
+        >
+        <a
+          class="cursor-default md:hover:text-graphicDesignTextFEM md:cursor-pointer"
+          href="#services"
+          >Services</a
+        >
+        <a
+          class="cursor-default md:hover:text-graphicDesignTextFEM md:cursor-pointer"
+          href="#projects"
+          >Projects</a
+        >
       </section>
-      <section 
-      class="flex gap-8 mt-8"
-      role="link">
-        <a 
-        href="#" 
-        target="_blank"
-        class="cursor-default md:cursor-pointer">
-          <img src="../images/icon-facebook.svg" alt=""></a>
-        <a 
-        href="#" 
-        target="_blank"
-        class="cursor-default md:cursor-pointer">
-          <img src="../images/icon-instagram.svg" alt=""></a>
-        <a 
-        href="#" 
-        target="_blank"
-        class="cursor-default md:cursor-pointer">
-          <img src="../images/icon-twitter.svg" alt=""></a>
-        <a 
-        href="#" 
-        target="_blank"
-        class="cursor-default md:cursor-pointer">
-          <img src="../images/icon-pinterest.svg" alt=""></a>
+      <section class="flex gap-8 mt-8" role="link">
+        <a href="#" target="_blank" class="cursor-default md:cursor-pointer">
+          <img src="/images/icon-facebook.svg" alt=""
+        /></a>
+        <a href="#" target="_blank" class="cursor-default md:cursor-pointer">
+          <img src="/images/icon-instagram.svg" alt=""
+        /></a>
+        <a href="#" target="_blank" class="cursor-default md:cursor-pointer">
+          <img src="/images/icon-twitter.svg" alt=""
+        /></a>
+        <a href="#" target="_blank" class="cursor-default md:cursor-pointer">
+          <img src="/images/icon-pinterest.svg" alt=""
+        /></a>
       </section>
     </footer>
   </body>
