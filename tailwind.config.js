@@ -3,6 +3,9 @@ module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
     extend: {
+      screens: {
+        'xmd': '970px',
+      },
       colors: {
         'softRedFEM': 'hsl(7, 99%, 70%)',
         'yellowFEM': 'hsl(51, 100%, 49%)',
@@ -13,6 +16,8 @@ module.exports = {
         'grayBlueFEM': 'hsl(210, 4%, 67%)',
         'darkGrayBlueFEM': 'hsl(232, 10%, 55%)',
         'darkerGrayBlueFEM': 'hsl(213, 9%, 39%)',
+        'clientSectionFEM': 'hsl(25, 100%, 98%)',
+        'footerBgFEM': 'hsl(166, 44%, 69%)'
       },
       fontFamily: {
         'barlow': 'Barlow, sans-serif',
