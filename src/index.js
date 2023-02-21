@@ -1,8 +1,3 @@
-// import AOS from 'aos';
-
-// AOS.init({
-//     // duration: 1000;
-// });
 
 const burgerBtn = document.querySelector('#burger');
 const navMenu = document.querySelector('#nav-menu');
