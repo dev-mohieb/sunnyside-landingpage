@@ -2,17 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+*:focus {
+    outline: 2px dotted orange;
+    outline-offset: 2px;
+}
 .hide {
-    visibility: hidden;
     opacity: 0;
+    top: -330px;
+    transition: opacity .3s ease, top .25s ease;
 }
 .show {
-    visibility: visible;
     opacity: 100;
-    left: 0;
-    right: 0;
-    margin: auto;
-    transition: opacity .3s ease;
+    top: 112px;
+    transition: opacity .3s ease, top .3s ease;
 }
 
 @layer components {
@@ -20,7 +22,7 @@
         @apply bg-center bg-no-repeat aspect-square bg-cover
     }
     .text-section {
-        @apply aspect-square text-center flex flex-col gap-8 py-16 px-6 text-desatBlueFEM 
+        @apply aspect-square text-center flex flex-col gap-8 py-16 px-6 text-desatBlueFEM md:py-8 xmd:py-16
     }
     .figure-text {
         @apply flex flex-col justify-end bg-center bg-no-repeat aspect-[3/5] bg-cover md:aspect-square
