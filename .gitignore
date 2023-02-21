@@ -6,7 +6,6 @@
 *.fig
 design
 style-guide.md
-package.json
 package-lock.json
 node_modules
 README-template.md
