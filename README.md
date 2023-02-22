@@ -1,7 +1,11 @@
+
+
 Technologies used:
 
 • Semantic HTML
+
 • TailwindCSS
+
 • Vanilla JavaScript
 ~~~~~~~~~
 
