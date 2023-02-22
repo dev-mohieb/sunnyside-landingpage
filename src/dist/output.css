@@ -538,6 +538,8 @@ video {
   .text-section {
     padding-top: 2rem;
     padding-bottom: 2rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
   }
 }
 
@@ -545,6 +547,8 @@ video {
   .text-section {
     padding-top: 4rem;
     padding-bottom: 4rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
   }
 }
 
@@ -608,12 +612,20 @@ video {
   margin: auto;
 }
 
+.-mb-12 {
+  margin-bottom: -3rem;
+}
+
 .-mb-\[25px\] {
   margin-bottom: -25px;
 }
 
-.mt-8 {
-  margin-top: 2rem;
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.mt-auto {
+  margin-top: auto;
 }
 
 .flex {
@@ -682,6 +694,10 @@ video {
 
 .flex-col {
   flex-direction: column;
+}
+
+.items-start {
+  align-items: flex-start;
 }
 
 .items-center {
@@ -781,11 +797,11 @@ video {
 }
 
 .bg-designMobile {
-  background-image: url(../images/mobile/image-graphic-design.jpg);
+  background-image: url(/images/mobile/image-graphic-design.jpg);
 }
 
 .bg-eggMobile {
-  background-image: url(../images/mobile/image-transform.jpg);
+  background-image: url(/images/mobile/image-transform.jpg);
 }
 
 .bg-gradient-to-b {
@@ -793,15 +809,15 @@ video {
 }
 
 .bg-heroMobile {
-  background-image: url(../images/mobile/image-header.jpg);
+  background-image: url(/images/mobile/image-header.jpg);
 }
 
 .bg-photographyMobile {
-  background-image: url(../images/mobile/image-photography.jpg);
+  background-image: url(/images/mobile/image-photography.jpg);
 }
 
 .bg-standoutMobile {
-  background-image: url(../images/mobile/image-stand-out.jpg);
+  background-image: url(/images/mobile/image-stand-out.jpg);
 }
 
 .from-black\/30 {
@@ -850,6 +866,10 @@ video {
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+
+.text-left {
+  text-align: left;
 }
 
 .text-center {
@@ -949,6 +969,10 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.underline {
+  text-decoration-line: underline;
+}
+
 .shadow-md {
   --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
@@ -1009,6 +1033,10 @@ video {
     display: none;
   }
 
+  .md\:h-8 {
+    height: 2rem;
+  }
+
   .md\:w-auto {
     width: auto;
   }
@@ -1033,6 +1061,10 @@ video {
     justify-content: center;
   }
 
+  .md\:gap-10 {
+    gap: 2.5rem;
+  }
+
   .md\:gap-9 {
     gap: 2.25rem;
   }
@@ -1047,47 +1079,32 @@ video {
   }
 
   .md\:bg-designDesktop {
-    background-image: url(../images/desktop/image-graphic-design.jpg);
+    background-image: url(/images/desktop/image-graphic-design.jpg);
   }
 
   .md\:bg-eggDesktop {
-    background-image: url(../images/desktop/image-transform.jpg);
+    background-image: url(/images/desktop/image-transform.jpg);
   }
 
   .md\:bg-heroDesktop {
-    background-image: url(../images/desktop/image-header.jpg);
+    background-image: url(/images/desktop/image-header.jpg);
   }
 
   .md\:bg-photographyDesktop {
-    background-image: url(../images/desktop/image-photography.jpg);
+    background-image: url(/images/desktop/image-photography.jpg);
   }
 
   .md\:bg-standoutDesktop {
-    background-image: url(../images/desktop/image-stand-out.jpg);
+    background-image: url(/images/desktop/image-stand-out.jpg);
   }
 
   .md\:p-0 {
     padding: 0px;
   }
 
-  .md\:px-4 {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-
-  .md\:px-6 {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-  }
-
-  .md\:py-3 {
-    padding-top: 0.75rem;
-    padding-bottom: 0.75rem;
-  }
-
-  .md\:text-sm {
-    font-size: 0.875rem;
-    line-height: 1.25rem;
+  .md\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
   }
 
   .md\:text-white {
@@ -1125,5 +1142,15 @@ video {
   .md\:hover\:text-white:hover {
     --tw-text-opacity: 1;
     color: rgb(255 255 255 / var(--tw-text-opacity));
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:gap-16 {
+    gap: 4rem;
+  }
+
+  .lg\:p-32 {
+    padding: 8rem;
   }
 }

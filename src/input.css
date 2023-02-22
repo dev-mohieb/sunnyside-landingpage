@@ -22,7 +22,7 @@
         @apply bg-center bg-no-repeat aspect-square bg-cover
     }
     .text-section {
-        @apply aspect-square text-center flex flex-col gap-8 py-16 px-6 text-desatBlueFEM md:py-8 xmd:py-16
+        @apply aspect-square text-center flex flex-col gap-8 py-16 px-6 text-desatBlueFEM md:py-8 md:px-16 xmd:py-16 xmd:px-24
     }
     .figure-text {
         @apply flex flex-col justify-end bg-center bg-no-repeat aspect-[3/5] bg-cover md:aspect-square

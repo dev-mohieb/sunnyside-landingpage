@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta property="og:image" content="../images/website-thumbnail.png" />
+    <meta property="og:image" content="/images/website-thumbnail.png" />
     <!-- Title and Icon -->
     <link
       rel="icon"
@@ -20,18 +20,18 @@
       rel="stylesheet"
     />
     <!-- Styles and JS -->
-    <link rel="stylesheet" href="../dist/output.css" />
-    <script src="./index.js" type="module"></script>
+    <link rel="stylesheet" href="/dist/output.css" />
+    <script src="/index.js" type="module"></script>
   </head>
   <body class="text-[18px] min-w-[300px]">
     <!-- Navigation Bar -->
     <nav
-      class="flex items-center justify-between px-6 py-8 fixed w-full bg-gradient-to-b from-black/30 to-transparent md:px-4"
+      class="flex items-center justify-between px-6 py-8 fixed w-full bg-gradient-to-b from-black/30 to-transparent "
     >
-      <img class="h-6 w-auto" src="../images/logo.svg" alt="logo" />
+      <img class="h-6 w-auto md:h-8" src="/images/logo.svg" alt="logo" />
       <!-- Nav Menu Btn - Mobile Only -->
       <button id="burger" class="cursor-default md:hidden">
-        <img src="../images/icon-hamburger.svg" alt="" />
+        <img src="/images/icon-hamburger.svg" alt="" />
       </button>
       <!-- Nav Menu -->
       <section
@@ -39,17 +39,17 @@
         class="hide text-xl flex absolute w-[88%] m-auto bg-white flex-col py-10 gap-8 items-center shadow-md text-darkGrayBlueFEM font-barlow left-0 right-0 md:text-white md:p-0 md:bg-inherit md:shadow-none md:justify-center md:flex-row md:m-0 md:static md:w-auto md:no-hide md:transition-none md:visible md:opacity-100 md:gap-9"
         role="navigation"
       >
-        <a class="cursor-default md:text-sm md:cursor-pointer" href="#about"
+        <a class="cursor-default md:cursor-pointer" href="#about"
           >About</a
         >
-        <a class="cursor-default md:text-sm md:cursor-pointer" href="#services"
+        <a class="cursor-default md:cursor-pointer" href="#services"
           >Services</a
         >
-        <a class="cursor-default md:text-sm md:cursor-pointer" href="#projects"
+        <a class="cursor-default md:cursor-pointer" href="#projects"
           >Projects</a
         >
         <a
-          class="cursor-default font-fraunces text-desatBlueFEM bg-yellowFEM py-4 px-8 rounded-full text-lg md:bg-white md:hover:bg-white/50 md:hover:text-white md:cursor-pointer md:text-sm md:py-3 md:px-6"
+          class="cursor-default font-fraunces text-desatBlueFEM bg-yellowFEM py-4 px-8 rounded-full text-lg md:bg-white md:hover:bg-white/50 md:hover:text-white md:cursor-pointer"
           href="#contact"
           >CONTACT</a
         >
@@ -57,14 +57,14 @@
     </nav>
     <header
       id="about"
-      class="h-screen bg-center bg-cover bg-heroMobile flex flex-col justify-center items-center text-center gap-12 md:bg-heroDesktop"
+      class="h-screen bg-center bg-cover bg-heroMobile flex flex-col justify-center items-center text-center gap-16 md:bg-heroDesktop"
     >
       <h2
-        class="font-fraunces font-black uppercase text-white text-4xl tracking-[.5rem]"
+        class="font-fraunces font-black uppercase text-white text-4xl tracking-[.5rem] md:text-5xl"
       >
         We are creatives
       </h2>
-      <img src="../images/icon-arrow-down.svg" alt="" />
+      <img src="/images/icon-arrow-down.svg" alt="" />
     </header>
     <main
       id="services"
@@ -75,15 +75,15 @@
         class="figure bg-eggMobile md:bg-eggDesktop order-1 md:order-2"
       ></figure>
       <section
-        class="text-section items-center justify-center order-2 md:order-1"
+        class="text-section bg-clientSectionFEM text-left items-start justify-center order-2 md:order-1"
       >
         <h2 class="font-fraunces font-black text-4xl">Transform your brand</h2>
-        <p class="text-darkGrayBlueFEM font-barlow text-lg">
+        <p class="text-darkGrayBlueFEM font-barlow text-lg mb-4">
           We are a full-service creative agency specializing in helping brands
           grow fast. Engage your clients through compelling visuals that do most
           of the marketing for you.
         </p>
-        <div class="flex flex-col font-fraunces font-black">
+        <div class="flex flex-col items-center font-fraunces font-black">
           <span class="-mb-[25px] bg-yellowFEM/40 rounded-full w-36 h-2">
           </span>
           <a
@@ -98,16 +98,16 @@
       <figure
         class="figure bg-standoutMobile md:bg-standoutDesktop order-3 md:order-4"
       ></figure>
-      <section class="text-section items-center justify-center order-4">
+      <section class="text-section bg-clientSectionFEM items-start text-left justify-center order-4">
         <h2 class="font-fraunces font-black text-4xl">
           Stand out to the right audience
         </h2>
-        <p class="text-darkGrayBlueFEM font-barlow text-lg">
+        <p class="text-darkGrayBlueFEM font-barlow text-lg mb-4">
           Using a collaborative formula of designers, researchers,
           photographers, videographers, and copywriters, we’ll build and extend
           your brand in digital places.
         </p>
-        <div class="flex flex-col font-fraunces font-black">
+        <div class="flex flex-col items-center font-fraunces font-black">
           <span
             class="-mb-[25px] bg-softRedFEM/40 rounded-full w-36 h-2 md:hover:bg-softRedFEM/100"
           >
@@ -151,19 +151,19 @@
     <!-- Client Reviews -->
     <aside
       id="projects"
-      class="text-center space-y-16 py-16 px-6 bg-clientSectionFEM"
+      class="text-center space-y-16 py-16 px-6 lg:p-32 bg-clientSectionFEM"
     >
       <h3 class="font-fraunces uppercase tracking-[.2em] text-grayBlueFEM">
         Client testimonials
       </h3>
       <section
-        class="flex flex-col md:flex-row justify-center items-center gap-16"
+        class="flex flex-col md:flex-row justify-center items-center gap-8 gap-8 md:gap-10 lg:gap-16"
       >
         <!-- First Client -->
-        <article class="flex flex-col justify-between items-center gap-8">
+        <article class="flex flex-col justify-between items-center gap-8 md:gap-10 lg:gap-16">
           <img
             class="w-20 rounded-full"
-            src="../images/image-emily.jpg"
+            src="/images/image-emily.jpg"
             alt="Emily posing for a photograph infront of a cropped section of a mountain"
           />
           <p class="font-barlow text-darkerGrayBlueFEM">
@@ -178,10 +178,10 @@
           </article>
         </article>
         <!-- Second Client -->
-        <article class="flex flex-col justify-between items-center gap-8">
+        <article class="flex flex-col justify-between items-center gap-8 md:gap-10 lg:gap-16">
           <img
             class="w-20 rounded-full"
-            src="../images/image-thomas.jpg"
+            src="/images/image-thomas.jpg"
             alt="Thomas smiling at the camera in a dim room"
           />
           <p class="font-barlow text-darkerGrayBlueFEM">
@@ -196,10 +196,10 @@
           </article>
         </article>
         <!-- Third Client -->
-        <article class="flex flex-col justify-between items-center gap-8">
+        <article class="flex flex-col justify-between items-center gap-8 md:gap-10 lg:gap-16">
           <img
             class="w-20 rounded-full"
-            src="../images/image-jennie.jpg"
+            src="/images/image-jennie.jpg"
             alt="Jennie smiling at the camera on the beach"
           />
           <p class="font-barlow text-darkerGrayBlueFEM">
@@ -217,44 +217,44 @@
       <!-- First Picture -->
       <picture>
         <source
-          srcset="../images/desktop/image-gallery-milkbottles.jpg"
+          srcset="/images/desktop/image-gallery-milkbottles.jpg"
           media="(min-width: 768px)"
         />
         <img
-          src="../images/mobile/image-gallery-milkbottles.jpg"
+          src="/images/mobile/image-gallery-milkbottles.jpg"
           alt="Milk bottles with a design of a blue sky with some clouds behind them"
         />
       </picture>
       <!-- Second Picture -->
       <picture>
         <source
-          srcset="../images/desktop/image-gallery-orange.jpg"
+          srcset="/images/desktop/image-gallery-orange.jpg"
           media="(min-width: 768px)"
         />
         <img
-          src="../images/mobile/image-gallery-orange.jpg"
+          src="/images/mobile/image-gallery-orange.jpg"
           alt="An orange sliced in half, in a plate on an orange colored surface"
         />
       </picture>
       <!-- Third Picture -->
       <picture>
         <source
-          srcset="../images/desktop/image-gallery-cone.jpg"
+          srcset="/images/desktop/image-gallery-cone.jpg"
           media="(min-width: 768px)"
         />
         <img
-          src="../images/mobile/image-gallery-cone.jpg"
+          src="/images/mobile/image-gallery-cone.jpg"
           alt="Empty ice-cream cone in front of a sky-blue background"
         />
       </picture>
       <!-- Fourth Picture -->
       <picture>
         <source
-          srcset="../images/desktop/image-gallery-sugarcubes.jpg"
+          srcset="/images/desktop/image-gallery-sugarcubes.jpg"
           media="(min-width: 768px)"
         />
         <img
-          src="../images/mobile/image-gallery-sugar-cubes.jpg"
+          src="/images/mobile/image-gallery-sugar-cubes.jpg"
           alt="Sugar cubes stacked on top of each other in front of a pink background on a slightly lighter shade pink surface"
         />
       </picture>
@@ -263,7 +263,7 @@
     <footer
       class="flex flex-col items-center justify-center gap-10 py-16 px-6 bg-footerBgFEM"
     >
-      <img src="../images/logofooter.svg" class="h-8" alt="Sunnyside Logo" />
+      <img src="/images/logofooter.svg" class="h-8" alt="Sunnyside Logo" />
       <section class="flex gap-12 font-barlow text-footerFEM" role="navigation">
         <a
           class="cursor-default md:hover:text-graphicDesignTextFEM md:cursor-pointer"
@@ -281,19 +281,22 @@
           >Projects</a
         >
       </section>
-      <section class="flex gap-8 mt-8" role="link">
+      <section class="flex gap-8" role="link">
         <a href="#" target="_blank" class="cursor-default md:cursor-pointer">
-          <img src="../images/icon-facebook.svg" alt=""
+          <img src="/images/icon-facebook.svg" alt=""
         /></a>
         <a href="#" target="_blank" class="cursor-default md:cursor-pointer">
-          <img src="../images/icon-instagram.svg" alt=""
+          <img src="/images/icon-instagram.svg" alt=""
         /></a>
         <a href="#" target="_blank" class="cursor-default md:cursor-pointer">
-          <img src="../images/icon-twitter.svg" alt=""
+          <img src="/images/icon-twitter.svg" alt=""
         /></a>
         <a href="#" target="_blank" class="cursor-default md:cursor-pointer">
-          <img src="../images/icon-pinterest.svg" alt=""
+          <img src="/images/icon-pinterest.svg" alt=""
         /></a>
+      </section>
+      <section class="mt-auto -mb-12">
+        <p class="font-barlow text-graphicDesignTextFEM">Created by <a class="underline" href="https://github.com/dev-mohieb/sunnyside-landingpage">Mohieb</a></p>
       </section>
     </footer>
   </body>
