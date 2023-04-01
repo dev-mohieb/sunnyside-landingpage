@@ -11,7 +11,7 @@ Technologies used:
 
 Links:
 
-• Live: https://mohieb-sunnyside.netlify.app
+• https://mohieb-sunnyside.netlify.app
 ~~~~~~~~~
 
 More info:
